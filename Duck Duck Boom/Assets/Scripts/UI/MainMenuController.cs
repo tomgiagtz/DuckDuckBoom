@@ -5,18 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuController : MonoBehaviour
 {
-    public void GoToGame()
+    public void LoadScene(string _sceneName)
     {
-        StartCoroutine(LoadSceneAsync("MainGame"));
-    }
-    public void GoToSettings()
-    {
-        StartCoroutine(LoadSceneAsync("Settings"));
+        StartCoroutine(LoadSceneAsync(_sceneName));
     }
 
     public void ExitGame()
     {
-        SceneManager.OnApplicationQuit();
+        Application.Quit();
     }
 
     IEnumerator LoadSceneAsync(string _sceneName)
