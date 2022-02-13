@@ -40,12 +40,9 @@ public class ArmorPickup : MonoBehaviour
         if (col.tag.Equals("Player"))
         {
             PlayerController player = col.GetComponent<PlayerController>();
-            if (player.allowWeaponPickup)
-            {
-                player.HandleArmorPickup();
-                DropManager.Instance.activeArmorDropCount -= 1;
-                Destroy(gameObject);
-            }
+            player.HandleArmorPickup();
+            DropManager.Instance.activeArmorDropCount -= 1;
+            Destroy(gameObject);
         }
     }
 }
