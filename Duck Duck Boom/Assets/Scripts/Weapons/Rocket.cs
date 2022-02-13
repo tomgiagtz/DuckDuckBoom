@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rocket : WeaponBase
 {
     [SerializeField] GameObject loadedRocket;
-    protected override void Fire()
+    public override void Fire()
     {
         if (!isMagEmpty && isFireReady)
         {

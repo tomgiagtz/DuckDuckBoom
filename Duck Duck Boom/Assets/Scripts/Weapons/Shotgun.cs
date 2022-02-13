@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shotgun : WeaponBase
 {
-    protected override void Fire()
+    public override void Fire()
     {
         if (!isMagEmpty && isFireReady)
         {
