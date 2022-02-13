@@ -864,8 +864,8 @@ MonoBehaviour:
   - {fileID: -9170448629031416532, guid: 4a5667931900ea2499c91db4df89d34f, type: 3}
   - {fileID: 7362661061344524757, guid: 4a5667931900ea2499c91db4df89d34f, type: 3}
   activeWeapon: {fileID: 0}
-  currAmmoText: {fileID: 0}
-  maxAmmoText: {fileID: 0}
+  currAmmoText: {fileID: 4168792150472027990}
+  maxAmmoText: {fileID: 7100564275661804471}
 --- !u!114 &721988617
 MonoBehaviour:
   m_ObjectHideFlags: 0
