@@ -212,7 +212,7 @@ public class PlayerController : MonoBehaviour
 
     void Death()
     {
-        Time.timeScale = 0;
+        HUDController.Instance.OnPlayerDied();
     }
     private void OnEnable()
     {
