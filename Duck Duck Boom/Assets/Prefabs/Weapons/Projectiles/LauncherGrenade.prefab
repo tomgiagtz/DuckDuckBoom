@@ -79,11 +79,13 @@ MonoBehaviour:
   speed: 25
   isAOE: 1
   blastRadius: 5
+  explosion: {fileID: 5412083790146804097, guid: 2f49c0ebade45d4499fc6cf2d2d84df3, type: 3}
   isTimed: 1
   detTime: 5
   hitMask:
     serializedVersion: 2
     m_Bits: 256
+  isPlayerTargeting: 0
 --- !u!1 &7890525118195361795
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,9 @@ public class Projectile : MonoBehaviour
     [SerializeField] bool isAOE;
     
     [SerializeField] float blastRadius;
-    
+
+    [SerializeField] GameObject explosion;
+
     [SerializeField] bool isTimed;
     
     [SerializeField] float detTime;
@@ -43,6 +45,7 @@ public class Projectile : MonoBehaviour
                 col.GetComponent<EnemyController>().TakeDamage();
             }
         }
+        Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 

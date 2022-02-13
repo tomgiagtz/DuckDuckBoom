@@ -216,6 +216,7 @@ MonoBehaviour:
   speed: 15
   isAOE: 0
   blastRadius: 0
+  explosion: {fileID: 5412083790146804097, guid: 2f49c0ebade45d4499fc6cf2d2d84df3, type: 3}
   isTimed: 0
   detTime: 0
   hitMask:
