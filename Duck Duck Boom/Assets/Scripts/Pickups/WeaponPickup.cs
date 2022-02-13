@@ -40,7 +40,6 @@ public class WeaponPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        Debug.Log("Power Time");
         if (col.tag.Equals("Player"))
         {
             PlayerController player = col.GetComponent<PlayerController>();

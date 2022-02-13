@@ -12,9 +12,9 @@ public enum EnemyType {
 [CreateAssetMenu(fileName = "Enemy", menuName = "EnemyData")]
 public class EnemyData : ScriptableObject {
     EnemyType type;
-    public float health = 100f;
+    public int health = 1;
     public float speed = 3f;
-    public float damage = 20f;
+    public int damage = 1;
 
     public float targetDeadzone = 3f;
 

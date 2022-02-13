@@ -9,7 +9,6 @@ public class GrenadeLauncher : WeaponBase
         if (!isMagEmpty && isFireReady)
         {
             isFireReady = false;
-            Debug.Log("Bang");
             Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
 
             Invoke(nameof(FireReset), fireRate);

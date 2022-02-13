@@ -61,7 +61,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: e86c377702aa20748ac223d70f899dc1, type: 2}
-  - {fileID: 2100000, guid: 151164125ee467a4a9ec37f72e050d9d, type: 2}
+  - {fileID: 2100000, guid: df4ad2c4b8b7d234cb50ba8925afa3f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 9062211320077404077}
   - component: {fileID: 7447606486621835389}
   m_Layer: 0
-  m_Name: Rocket
+  m_Name: EnemyRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,15 +130,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  speed: 30
+  speed: 20
   isAOE: 1
-  blastRadius: 5
+  blastRadius: 4
   isTimed: 0
   detTime: 0
   hitMask:
     serializedVersion: 2
-    m_Bits: 264
-  isPlayerTargeting: 0
+    m_Bits: 136
+  isPlayerTargeting: 1
 --- !u!54 &9062211320077404077
 Rigidbody:
   m_ObjectHideFlags: 0
