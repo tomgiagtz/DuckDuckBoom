@@ -164,6 +164,7 @@ public class PlayerController : MonoBehaviour
     {
         activeWeapon.gameObject.SetActive(false);
         activeWeapon = weapons[index];
+        HUDController.Instance.SetActiveWeapon(weapons[index], (WeaponPickup.WEAPON) index);
         activeWeapon.gameObject.SetActive(true);
     }
     void EnablePistol()
@@ -171,6 +172,7 @@ public class PlayerController : MonoBehaviour
         allowWeaponPickup = true;
         activeWeapon.gameObject.SetActive(false);
         activeWeapon = weapons[0];
+        HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
         activeWeapon.gameObject.SetActive(true);
     }
 

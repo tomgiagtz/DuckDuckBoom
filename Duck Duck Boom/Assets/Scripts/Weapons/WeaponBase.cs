@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 
 public abstract class WeaponBase : MonoBehaviour
 {
-    [SerializeField] protected int magazineSize;
+    [SerializeField] public int magazineSize;
     
     [SerializeField] protected float reloadTime;
     
@@ -16,7 +16,7 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] protected Projectile projectile;
 
     protected PlayerActions playerActions;
-    protected int ammoRemaining;
+    public int ammoRemaining;
     protected bool isMagEmpty;
     protected bool isFireReady;
 
