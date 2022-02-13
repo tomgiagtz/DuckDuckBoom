@@ -76,10 +76,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magazineSize: 10
-  reloadTime: 3
+  reloadTime: 1.5
   fireRate: 0.5
   spawnPoint: {fileID: 2920540908727572794}
   projectile: {fileID: 2064093840840170783, guid: c489a85d854059b4b87e374d77103e13, type: 3}
+  ammoRemaining: 0
 --- !u!1001 &2920540909637868910
 PrefabInstance:
   m_ObjectHideFlags: 0

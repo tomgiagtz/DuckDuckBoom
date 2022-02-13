@@ -50,6 +50,7 @@ MonoBehaviour:
   fireRate: 2
   spawnPoint: {fileID: 6813379246336775966}
   projectile: {fileID: 2064093840840170783, guid: 693af0ca15abe9d419a82beb681785ee, type: 3}
+  ammoRemaining: 0
 --- !u!1 &6813379246336775967
 GameObject:
   m_ObjectHideFlags: 0

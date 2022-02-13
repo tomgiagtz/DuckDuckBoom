@@ -45,7 +45,7 @@ public class Projectile : MonoBehaviour
                 col.GetComponent<EnemyController>().TakeDamage();
             }
         }
-        Instantiate(explosion, transform.position, transform.rotation);
+        GameObject particle = Instantiate(explosion, transform.position, transform.rotation);
         Destroy(gameObject);
     }
 

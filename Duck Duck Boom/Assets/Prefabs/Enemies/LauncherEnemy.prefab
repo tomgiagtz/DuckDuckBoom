@@ -207,6 +207,7 @@ MonoBehaviour:
   animator: {fileID: 1499368698714783298}
   refreshTime: 0.5
   activeWeapon: {fileID: 8609078527470585123}
+  deathEffect: {fileID: 2785720546207922630, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
   groundMask:
     serializedVersion: 2
     m_Bits: 72

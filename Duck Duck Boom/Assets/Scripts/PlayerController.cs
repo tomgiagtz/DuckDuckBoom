@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] int HP = 3;
-    [SerializeField] int Armor = 0;
+    [SerializeField] bool hasArmor = false;
     [SerializeField] float invincabilityTime = 0.5f;
 
     [SerializeField] float speed = 10f;
@@ -40,13 +40,14 @@ public class PlayerController : MonoBehaviour
     {
         playerActions = new PlayerActions();
         rigidbody = GetComponent<Rigidbody>();
-
         playerActions.Player_Map.Attack.performed += _ => Attack();
         playerActions.Player_Map.Throw.performed += _ => CheckThrowable();
         //playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
     }
 
-        void Start() {
+    void Start() 
+    {
+        activeWeapon.RefillAmmo();
         HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
     }
 
@@ -162,8 +163,8 @@ public class PlayerController : MonoBehaviour
 
     public void HandleArmorPickup()
     {
-        if (Armor == 0) {
-            Armor = 1;
+        if (!hasArmor) {
+            hasArmor = true;
             HUDController.Instance.OnPickupArmor();
         }
     }
@@ -174,6 +175,7 @@ public class PlayerController : MonoBehaviour
         activeWeapon = weapons[index];
         HUDController.Instance.SetActiveWeapon(weapons[index], (WeaponPickup.WEAPON) index);
         activeWeapon.gameObject.SetActive(true);
+        activeWeapon.RefillAmmo();
     }
     void EnablePistol()
     {
@@ -182,6 +184,7 @@ public class PlayerController : MonoBehaviour
         activeWeapon = weapons[0];
         HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
         activeWeapon.gameObject.SetActive(true);
+        activeWeapon.RefillAmmo();
     }
 
 
@@ -191,8 +194,8 @@ public class PlayerController : MonoBehaviour
         {
             allowDamage = false;
             
-            if (Armor > 0) {
-                Armor -= 1;
+            if (hasArmor) {
+                hasArmor = false;
                 HUDController.Instance.OnDestroyArmor();
             } else {
                 HP -= 1;

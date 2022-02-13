@@ -48,9 +48,16 @@ public abstract class WeaponBase : MonoBehaviour
         }
     }
 
-    void RefillAmmo()
+    public void RefillAmmo()
     {
         isMagEmpty = false;
         ammoRemaining = magazineSize;
+    }
+
+    public void EmptyMagazine()
+    {
+        ammoRemaining = 0;
+        isMagEmpty = true;
+        Invoke(nameof(RefillAmmo), reloadTime);
     }
 }
