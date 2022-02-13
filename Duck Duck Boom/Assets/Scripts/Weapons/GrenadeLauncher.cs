@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrenadeLauncher : WeaponBase
 {
-    protected override void Fire()
+    public override void Fire()
     {
         if (!isMagEmpty && isFireReady)
         {

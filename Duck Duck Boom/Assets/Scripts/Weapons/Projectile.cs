@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public Rigidbody rb;
-
     [SerializeField] int damage;
     
     [SerializeField] int speed;
@@ -20,8 +18,10 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] LayerMask hitMask;
 
+    Rigidbody rb;
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
         rb.velocity = transform.forward * speed;
         if (isTimed)
             Invoke(nameof(Detonate), detTime);

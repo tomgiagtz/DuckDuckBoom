@@ -22,9 +22,6 @@ public abstract class WeaponBase : MonoBehaviour
 
     protected void Awake()
     {
-        playerActions = new PlayerActions();
-        playerActions.Player_Map.Attack.performed += _ => Fire();
-
         RefillAmmo();
         FireReset();
     }
@@ -35,7 +32,7 @@ public abstract class WeaponBase : MonoBehaviour
             Reload();
     }
 
-    protected abstract void Fire();
+    public abstract void Fire();
 
     protected void FireReset()
     {
@@ -55,15 +52,5 @@ public abstract class WeaponBase : MonoBehaviour
     {
         isMagEmpty = false;
         ammoRemaining = magazineSize;
-    }
-
-    private void OnEnable()
-    {
-        playerActions.Player_Map.Enable();
-    }
-
-    private void OnDisable()
-    {
-        playerActions.Player_Map.Disable();
     }
 }

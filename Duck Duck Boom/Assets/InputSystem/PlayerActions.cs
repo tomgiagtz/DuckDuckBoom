@@ -33,6 +33,30 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Throw"",
+                    ""type"": ""Button"",
+                    ""id"": ""ce8aa927-f32d-4692-88cf-2bfd99e01064"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CycleWeapon"",
+                    ""type"": ""Value"",
+                    ""id"": ""4515ab91-fd99-4d3a-b6d8-00c035b8322b"",
+                    ""expectedControlType"": ""Axis"",
+                    ""processors"": ""Clamp(min=-1,max=1)"",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""CycleThrowable"",
+                    ""type"": ""Button"",
+                    ""id"": ""ee1ec1b9-4de9-41df-9331-5c0cf4551205"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -101,6 +125,39 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                     ""action"": ""Attack"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6cbc2b70-9215-4bb3-a566-b475c7f9a6c5"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Throw"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""964f2444-f7bb-4b34-8f3b-afdefea59480"",
+                    ""path"": ""<Mouse>/scroll/y"",
+                    ""interactions"": """",
+                    ""processors"": ""Normalize(min=-1,max=1)"",
+                    ""groups"": """",
+                    ""action"": ""CycleWeapon"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e9a6fa2a-6372-49d4-8ab8-8e46003ebb54"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""CycleThrowable"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -111,6 +168,9 @@ public class @PlayerActions : IInputActionCollection, IDisposable
         m_Player_Map = asset.FindActionMap("Player_Map", throwIfNotFound: true);
         m_Player_Map_Movement = m_Player_Map.FindAction("Movement", throwIfNotFound: true);
         m_Player_Map_Attack = m_Player_Map.FindAction("Attack", throwIfNotFound: true);
+        m_Player_Map_Throw = m_Player_Map.FindAction("Throw", throwIfNotFound: true);
+        m_Player_Map_CycleWeapon = m_Player_Map.FindAction("CycleWeapon", throwIfNotFound: true);
+        m_Player_Map_CycleThrowable = m_Player_Map.FindAction("CycleThrowable", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -162,12 +222,18 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     private IPlayer_MapActions m_Player_MapActionsCallbackInterface;
     private readonly InputAction m_Player_Map_Movement;
     private readonly InputAction m_Player_Map_Attack;
+    private readonly InputAction m_Player_Map_Throw;
+    private readonly InputAction m_Player_Map_CycleWeapon;
+    private readonly InputAction m_Player_Map_CycleThrowable;
     public struct Player_MapActions
     {
         private @PlayerActions m_Wrapper;
         public Player_MapActions(@PlayerActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Player_Map_Movement;
         public InputAction @Attack => m_Wrapper.m_Player_Map_Attack;
+        public InputAction @Throw => m_Wrapper.m_Player_Map_Throw;
+        public InputAction @CycleWeapon => m_Wrapper.m_Player_Map_CycleWeapon;
+        public InputAction @CycleThrowable => m_Wrapper.m_Player_Map_CycleThrowable;
         public InputActionMap Get() { return m_Wrapper.m_Player_Map; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -183,6 +249,15 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @Attack.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnAttack;
                 @Attack.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnAttack;
                 @Attack.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnAttack;
+                @Throw.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnThrow;
+                @Throw.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnThrow;
+                @Throw.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnThrow;
+                @CycleWeapon.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnCycleWeapon;
+                @CycleWeapon.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnCycleWeapon;
+                @CycleWeapon.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnCycleWeapon;
+                @CycleThrowable.started -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnCycleThrowable;
+                @CycleThrowable.performed -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnCycleThrowable;
+                @CycleThrowable.canceled -= m_Wrapper.m_Player_MapActionsCallbackInterface.OnCycleThrowable;
             }
             m_Wrapper.m_Player_MapActionsCallbackInterface = instance;
             if (instance != null)
@@ -193,6 +268,15 @@ public class @PlayerActions : IInputActionCollection, IDisposable
                 @Attack.started += instance.OnAttack;
                 @Attack.performed += instance.OnAttack;
                 @Attack.canceled += instance.OnAttack;
+                @Throw.started += instance.OnThrow;
+                @Throw.performed += instance.OnThrow;
+                @Throw.canceled += instance.OnThrow;
+                @CycleWeapon.started += instance.OnCycleWeapon;
+                @CycleWeapon.performed += instance.OnCycleWeapon;
+                @CycleWeapon.canceled += instance.OnCycleWeapon;
+                @CycleThrowable.started += instance.OnCycleThrowable;
+                @CycleThrowable.performed += instance.OnCycleThrowable;
+                @CycleThrowable.canceled += instance.OnCycleThrowable;
             }
         }
     }
@@ -201,5 +285,8 @@ public class @PlayerActions : IInputActionCollection, IDisposable
     {
         void OnMovement(InputAction.CallbackContext context);
         void OnAttack(InputAction.CallbackContext context);
+        void OnThrow(InputAction.CallbackContext context);
+        void OnCycleWeapon(InputAction.CallbackContext context);
+        void OnCycleThrowable(InputAction.CallbackContext context);
     }
 }
