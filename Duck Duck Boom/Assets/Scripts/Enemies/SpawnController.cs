@@ -11,8 +11,10 @@ public class SpawnController : MonoBehaviour
 
     public bool isEmpty = false;
 
+    public float spawnRange = 25f;
     public float spawnTime = 5f;
     float currSpawnTime = 0f;
+    bool isPlayerInRange = false;
 
     public float spawnRadius = 7.5f;
 
@@ -21,10 +23,12 @@ public class SpawnController : MonoBehaviour
     void Start() {
         currSpawnTime = spawnTime;
         SpawnEnemies(initialSpawnCount);
+        InvokeRepeating("CheckPlayerInRange", 0, 0.5f);
     }
 
     // Update is called once per frame
     void Update() {
+        if (!isPlayerInRange) return;
         if (currSpawnCount < numEnemiesBeforeFinished) {
             currSpawnTime -= Time.deltaTime;
             if (currSpawnTime <= 0f) {
@@ -45,5 +49,14 @@ public class SpawnController : MonoBehaviour
             enemy.transform.parent = transform;
             currSpawnCount++;
         }
+    }
+
+    bool IsPlayerInRange() {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, spawnRange,  1 << LayerMask.NameToLayer("Player"));
+        return hitColliders.Length > 0;
+    }
+
+    void CheckPlayerInRange() {
+        isPlayerInRange = IsPlayerInRange();
     }
 }
