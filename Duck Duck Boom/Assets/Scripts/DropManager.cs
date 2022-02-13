@@ -35,6 +35,7 @@ public class DropManager : MonoBehaviour
 
             if (RollArmorDrop())
                 DropArmor(point);
+            return;
         }
 
         if (RollWeaponDrop())
