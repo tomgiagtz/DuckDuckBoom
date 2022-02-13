@@ -11,7 +11,7 @@ public enum EnemyType {
 [System.Serializable]
 [CreateAssetMenu(fileName = "Enemy", menuName = "EnemyData")]
 public class EnemyData : ScriptableObject {
-    EnemyType type;
+    public EnemyType type;
     public int health = 1;
     public float speed = 3f;
     public int damage = 1;

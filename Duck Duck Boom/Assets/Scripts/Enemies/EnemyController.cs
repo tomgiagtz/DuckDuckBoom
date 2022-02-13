@@ -117,7 +117,7 @@ public class EnemyController : MonoBehaviour{
 
     public void TakeDamage()
     {
-        //Check If Drop Powerup
+        DropManager.Instance.DropCheck(transform, data.type);
         Destroy(gameObject);
     }
 

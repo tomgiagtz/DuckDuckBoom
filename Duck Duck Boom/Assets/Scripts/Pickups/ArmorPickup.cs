@@ -2,20 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponPickup : MonoBehaviour
+public class ArmorPickup : MonoBehaviour
 {
-    public enum WEAPON
-    {
-        PISTOL,
-        SHOTGUN,
-        ROCKET,
-        GRENADE_LAUNCHER
-    }
-
-    [SerializeField] WEAPON pickupType;
-
-    [SerializeField] float duration;
-
     [SerializeField] float lifetime = 20f;
 
     [SerializeField] float degreesPerSecond = 30f;
@@ -43,7 +31,7 @@ public class WeaponPickup : MonoBehaviour
 
     void Despawn()
     {
-        DropManager.Instance.activeWeaponDropCount -= 1;
+        DropManager.Instance.activeArmorDropCount -= 1;
         Destroy(gameObject);
     }
 
@@ -54,8 +42,8 @@ public class WeaponPickup : MonoBehaviour
             PlayerController player = col.GetComponent<PlayerController>();
             if (player.allowWeaponPickup)
             {
-                player.HandleWeaponPickup(pickupType, duration);
-                DropManager.Instance.activeWeaponDropCount -= 1;
+                player.HandleArmorPickup();
+                DropManager.Instance.activeArmorDropCount -= 1;
                 Destroy(gameObject);
             }
         }

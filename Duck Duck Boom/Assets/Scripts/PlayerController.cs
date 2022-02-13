@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] int HP = 3;
+    [SerializeField] int Armor = 0;
     [SerializeField] float invincabilityTime = 0.5f;
 
     [SerializeField] float speed = 10f;
@@ -145,6 +146,12 @@ public class PlayerController : MonoBehaviour
         Invoke(nameof(EnablePistol), duration);
     }
 
+    public void HandleArmorPickup()
+    {
+        if (Armor == 0)
+            Armor = 1;
+    }
+
     void SetActiveWeapon(int index)
     {
         activeWeapon.gameObject.SetActive(false);
@@ -165,7 +172,10 @@ public class PlayerController : MonoBehaviour
         if(allowDamage)
         {
             allowDamage = false;
-            HP -= 1;
+            if (Armor > 0)
+                Armor -= 1;
+            else
+                HP -= 1;
             Invoke(nameof(EndInvincability), invincabilityTime);
         }
         if (HP <= 0)
