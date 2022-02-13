@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
         camps = FindObjectsOfType<SpawnController>();
         totalCamps = camps.Length;
         remainingCamps = totalCamps;
+        enemiesKilled = 0;
     }
 
     private void Update()
@@ -41,6 +42,7 @@ public class GameManager : MonoBehaviour
         }
 
         remainingCamps = totalCamps - emptyCamps;
+        HUDController.Instance.SetCampsRemaining(remainingCamps);
     }
 
     public int GetNumCampsRemaining()

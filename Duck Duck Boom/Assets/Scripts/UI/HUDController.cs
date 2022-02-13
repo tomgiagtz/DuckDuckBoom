@@ -59,6 +59,8 @@ public class HUDController : Singleton<HUDController> {
         currWeaponImage.sprite = weaponImages[0];
     }
 
+    
+
 
     public void SetActiveWeapon(WeaponBase activeWeapon, WeaponPickup.WEAPON _weaponType) {
         this.activeWeapon = activeWeapon;
@@ -73,9 +75,39 @@ public class HUDController : Singleton<HUDController> {
         currAmmoText.SetText(currAmmo.ToString());
     }
 
+
+    public TextMeshProUGUI campsRemainingText;
+
+    public void SetCampsRemaining(int num) {
+        campsRemainingText.SetText(num.ToString() + " Camps Remaining!");
+    }
+
     public void Start() {
         ResetHealth();
         WeaponInit();
+        Time.timeScale = 1;
+        deathGo.SetActive(false);
+        winGo.SetActive(false);
+    }
+
+    [Header("End States")]
+    public GameObject deathGo;
+    public GameObject winGo;
+
+    public TextMeshProUGUI winText;
+    public TextMeshProUGUI deathText;
+
+    public void OnPlayerDied() {
+        Time.timeScale = 0;
+        deathText.SetText("But you managed to duck " + GameManager.Instance.GetEnemiesKilled() + " geese!");
+        deathGo.SetActive(true);
+    }
+    
+    public void OnPlayerWon() {
+        Time.timeScale = 0;
+        winText.SetText("You ducked " + GameManager.Instance.GetEnemiesKilled() + " geese!");
+        winGo.SetActive(true);
+
     }
 
 }
