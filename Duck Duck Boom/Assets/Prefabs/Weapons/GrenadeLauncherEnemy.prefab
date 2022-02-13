@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 3070832581433630608}
   - component: {fileID: 3070832581433630609}
   m_Layer: 0
-  m_Name: GrenadeLauncherWeapon
+  m_Name: GrenadeLauncherEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,9 +77,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   magazineSize: 6
   reloadTime: 4
-  fireRate: 1
+  fireRate: 2
   spawnPoint: {fileID: 3070832579881698814}
-  projectile: {fileID: 7890525119062141657, guid: 48e906180479f4446ab6b636198dd5fc, type: 3}
+  projectile: {fileID: 7890525119062141657, guid: 36b7c462b298b6840b25a08f9c7cdfbf, type: 3}
 --- !u!1001 &3070832579364127672
 PrefabInstance:
   m_ObjectHideFlags: 0

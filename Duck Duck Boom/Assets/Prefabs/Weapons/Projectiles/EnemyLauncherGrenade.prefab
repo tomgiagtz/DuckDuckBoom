@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7890525119062141659}
   - component: {fileID: 7890525119062141657}
   m_Layer: 0
-  m_Name: LauncherGrenade
+  m_Name: EnemyLauncherGrenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,14 +76,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  speed: 25
+  speed: 15
   isAOE: 1
-  blastRadius: 5
+  blastRadius: 4
   isTimed: 1
   detTime: 5
   hitMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
+  isPlayerTargeting: 1
 --- !u!1 &7890525118195361795
 GameObject:
   m_ObjectHideFlags: 0
@@ -144,7 +145,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 151164125ee467a4a9ec37f72e050d9d, type: 2}
+  - {fileID: 2100000, guid: df4ad2c4b8b7d234cb50ba8925afa3f7, type: 2}
   - {fileID: 2100000, guid: 1eb64454235a88445b27868a75388ddb, type: 2}
   - {fileID: 2100000, guid: e86c377702aa20748ac223d70f899dc1, type: 2}
   m_StaticBatchInfo:

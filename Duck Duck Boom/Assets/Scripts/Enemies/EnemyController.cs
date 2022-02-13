@@ -15,7 +15,6 @@ public class EnemyController : MonoBehaviour{
     public EnemyData data;
     [SerializeField]
     private EnemyState state;
-    [SerializeField]
     private Transform target;
     private Vector3 homeTarget;
     [SerializeField] Animator animator;
@@ -24,8 +23,11 @@ public class EnemyController : MonoBehaviour{
 
     private bool isAttacking = false;
 
+    [SerializeField]
+    WeaponBase activeWeapon;
 
-    
+
+
 
     void Start() {
         InitAgent();
@@ -56,7 +58,7 @@ public class EnemyController : MonoBehaviour{
     }
 
     void HandleAttack() {
-        
+        activeWeapon.Fire();
     }
 
     float currAgroTime;
@@ -111,6 +113,12 @@ public class EnemyController : MonoBehaviour{
             Debug.Log("can see player");
             return true;
         }
+    }
+
+    public void TakeDamage()
+    {
+        //Check If Drop Powerup
+        Destroy(gameObject);
     }
 
     private void OnValidate() {

@@ -18,29 +18,70 @@ public class Projectile : MonoBehaviour
 
     [SerializeField] LayerMask hitMask;
 
+    [SerializeField] bool isPlayerTargeting;
+
     Rigidbody rb;
+    string targetTag = "Enemy";
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = transform.forward * speed;
         if (isTimed)
             Invoke(nameof(Detonate), detTime);
+
+        if(isPlayerTargeting)
+            targetTag = "Player";
     }
 
     private void Detonate()
     {
+        Collider[] hitColliders = Physics.OverlapSphere(transform.position, blastRadius);
+        foreach (Collider col in hitColliders)
+        {
+            if(isPlayerTargeting && col.tag.Equals("Player"))
+            {
+                col.GetComponent<PlayerController>().TakeDamage();
+            }
+            else if(col.tag.Equals("Enemy"))
+            {
+                col.GetComponent<EnemyController>().TakeDamage();
+            }
+        }
         Destroy(gameObject);
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        if((hitMask.value & 1<<collision.gameObject.layer) != 0)
+        if (isPlayerTargeting && collision.collider.tag.Equals("Player"))
         {
-            if(!isTimed)
+            collision.collider.GetComponent<PlayerController>().TakeDamage();
+        }
+        else if (collision.collider.tag.Equals("Enemy"))
+        {
+            Detonate();
+        }
+    }
+
+    private void OnTriggerEnter(Collider col)
+    {
+        if ((hitMask.value & 1 << col.gameObject.layer) != 0)
+        {
+            if(isAOE)
             {
-                Destroy(gameObject);
+                Detonate();
             }
+            
+            if (isPlayerTargeting && col.tag.Equals("Player"))
+            {
+                col.GetComponent<PlayerController>().TakeDamage();
+            }
+            else if (col.tag.Equals("Enemy"))
+            {
+                col.GetComponent<EnemyController>().TakeDamage();
+            }
+
+            Destroy(gameObject);
         }
     }
 }

@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 1eb64454235a88445b27868a75388ddb, type: 2}
+  - {fileID: 2100000, guid: df4ad2c4b8b7d234cb50ba8925afa3f7, type: 2}
   - {fileID: 2100000, guid: e86c377702aa20748ac223d70f899dc1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -178,7 +178,7 @@ GameObject:
   - component: {fileID: 2770243682372581482}
   - component: {fileID: 1740530847240003308}
   m_Layer: 0
-  m_Name: Bullet
+  m_Name: EnemyBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -213,15 +213,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 0
-  speed: 15
+  speed: 10
   isAOE: 0
   blastRadius: 0
   isTimed: 0
   detTime: 0
   hitMask:
     serializedVersion: 2
-    m_Bits: 264
-  isPlayerTargeting: 0
+    m_Bits: 136
+  isPlayerTargeting: 1
 --- !u!54 &2770243682372581482
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -9,10 +9,9 @@ public class Shotgun : WeaponBase
         if (!isMagEmpty && isFireReady)
         {
             isFireReady = false;
-            Debug.Log("Bang");
             Instantiate(projectile, spawnPoint.position, spawnPoint.rotation);
-            Instantiate(projectile, spawnPoint.position, Quaternion.LookRotation(spawnPoint.forward + spawnPoint.right, spawnPoint.up));
-            Instantiate(projectile, spawnPoint.position, Quaternion.LookRotation(spawnPoint.forward - spawnPoint.right, spawnPoint.up));
+            Instantiate(projectile, spawnPoint.position, Quaternion.LookRotation(spawnPoint.forward + (spawnPoint.right / 3), spawnPoint.up));
+            Instantiate(projectile, spawnPoint.position, Quaternion.LookRotation(spawnPoint.forward - (spawnPoint.right / 3), spawnPoint.up));
 
             Invoke(nameof(FireReset), fireRate);
             ammoRemaining -= 1;

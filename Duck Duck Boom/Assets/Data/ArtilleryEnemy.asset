@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b0d73f1041f0354aa777b4b43c6804e, type: 3}
   m_Name: ArtilleryEnemy
   m_EditorClassIdentifier: 
-  health: 100
+  health: 1
   speed: 3
-  damage: 20
+  damage: 1
   targetDeadzone: 3
   agroTimeout: 7
   agroRange: 30
-  attackRange: 20
+  attackRange: 15

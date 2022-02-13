@@ -55,6 +55,8 @@ MonoBehaviour:
   enemyPrefabs:
   - {fileID: 6742721200630786867, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
   - {fileID: 6742721200630786867, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+  - {fileID: 6742721200630786867, guid: c7219a7be28d2c244b4e22f9707e62df, type: 3}
+  - {fileID: 6742721200630786867, guid: 8bf2d8b141c911b408b80c510679a736, type: 3}
 --- !u!208 &2864237800704187310
 NavMeshObstacle:
   m_ObjectHideFlags: 0
