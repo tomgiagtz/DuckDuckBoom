@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public enum EnemyState {
     Idle,
@@ -8,17 +9,24 @@ public enum EnemyState {
     Chase
 }
 
-public class EnemyController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+public class EnemyController : MonoBehaviour{
+
+    private NavMeshAgent agent;
+    public EnemyData data;
+    public EnemyState state;
+
+    void Start() {
+        InitAgent();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void InitAgent() {
+        agent = GetComponent<NavMeshAgent>();
+        agent.speed = data.speed;
+        agent.stoppingDistance = data.attackRange;
+        agent.SetDestination(Vector3.zero);
+    }
+
+    void SetState() {
+
     }
 }

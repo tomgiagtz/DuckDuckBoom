@@ -8,10 +8,11 @@ public enum EnemyType {
     Bomber
 }
 
+[CreateAssetMenu(fileName = "Enemy", menuName = "EnemyData")]
 public class EnemyData : ScriptableObject {
-    public float health;
-    public float speed;
-    public float damage;
+    public float health = 100f;
+    public float speed = 3f;
+    public float damage = 20f;
     public float fireRate;
     public float fireRange;
     
