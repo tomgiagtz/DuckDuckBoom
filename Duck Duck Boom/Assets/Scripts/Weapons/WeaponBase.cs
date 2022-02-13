@@ -16,13 +16,12 @@ public abstract class WeaponBase : MonoBehaviour
     [SerializeField] protected Projectile projectile;
 
     protected PlayerActions playerActions;
-    public int ammoRemaining;
+    public int ammoRemaining = 0;
     protected bool isMagEmpty;
     protected bool isFireReady;
 
     protected void Awake()
     {
-        RefillAmmo();
         FireReset();
     }
 
@@ -48,7 +47,7 @@ public abstract class WeaponBase : MonoBehaviour
         }
     }
 
-    void RefillAmmo()
+    public void RefillAmmo()
     {
         isMagEmpty = false;
         ammoRemaining = magazineSize;
