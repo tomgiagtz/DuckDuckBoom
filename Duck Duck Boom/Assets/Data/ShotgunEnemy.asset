@@ -16,6 +16,6 @@ MonoBehaviour:
   speed: 3
   damage: 20
   targetDeadzone: 3
-  agroTimeout: 3
+  agroTimeout: 5
   agroRange: 15
   attackRange: 5

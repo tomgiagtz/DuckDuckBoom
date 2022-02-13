@@ -15,8 +15,7 @@ MonoBehaviour:
   health: 100
   speed: 3
   damage: 20
-  fireRate: 1
-  fireRange: 3
-  agroTimeout: 3
+  targetDeadzone: 3
+  agroTimeout: 7
   agroRange: 30
   attackRange: 20
