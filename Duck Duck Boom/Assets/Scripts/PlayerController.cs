@@ -5,21 +5,6 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    enum WEAPON
-    { 
-        PISTOL,
-        SHOTGUN,
-        ROCKET,
-        GRENADE_LAUNCHER
-    }
-
-    enum THROWABLE
-    {
-        GRENADE,
-        C4,
-        PROXIMITY_MINE,
-        NONE
-    }
 
     [SerializeField] float speed = 10f;
 
@@ -28,10 +13,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] WeaponBase activeWeapon;
     [SerializeField] WeaponBase[] weapons;
 
-    [SerializeField] THROWABLE activeThrowable;
+    [SerializeField] Throwable.THROWABLE activeThrowable;
     [SerializeField] Throwable[] throwables;
     [SerializeField] Transform throwableSpawn;
 
+    public bool allowWeaponPickup = true;
 
     PlayerActions playerActions;
     Rigidbody rigidbody;
@@ -90,15 +76,15 @@ public class PlayerController : MonoBehaviour
         {
             switch (activeThrowable)
             {
-                case THROWABLE.NONE:
+                case Throwable.THROWABLE.NONE:
                     break;
-                case THROWABLE.GRENADE:
+                case Throwable.THROWABLE.GRENADE:
                     Throw(throwables[0], throwableSpawn, false);
                     break;
-                case THROWABLE.C4:
+                case Throwable.THROWABLE.C4:
                     Throw(throwables[1], throwableSpawn, true);
                     break;
-                case THROWABLE.PROXIMITY_MINE:
+                case Throwable.THROWABLE.PROXIMITY_MINE:
                     Throw(throwables[2], transform, false);
                     break;
             }
@@ -135,7 +121,39 @@ public class PlayerController : MonoBehaviour
         if (ThrowableIndex >= throwables.Length)
             ThrowableIndex = 0;
 
-        activeThrowable = (THROWABLE)ThrowableIndex;
+        activeThrowable = (Throwable.THROWABLE)ThrowableIndex;
+    }
+
+    public void HandleWeaponPickup(WeaponPickup.WEAPON type, float duration)
+    {
+        switch(type)
+        {
+            case WeaponPickup.WEAPON.SHOTGUN:
+                SetActiveWeapon(1);
+                break;
+            case WeaponPickup.WEAPON.ROCKET:
+                SetActiveWeapon(2);
+                break;
+            case WeaponPickup.WEAPON.GRENADE_LAUNCHER:
+                SetActiveWeapon(3);
+                break;
+        }
+        allowWeaponPickup = false;
+        Invoke(nameof(EnablePistol), duration);
+    }
+
+    void SetActiveWeapon(int index)
+    {
+        activeWeapon.gameObject.SetActive(false);
+        activeWeapon = weapons[index];
+        activeWeapon.gameObject.SetActive(true);
+    }
+    void EnablePistol()
+    {
+        allowWeaponPickup = true;
+        activeWeapon.gameObject.SetActive(false);
+        activeWeapon = weapons[0];
+        activeWeapon.gameObject.SetActive(true);
     }
 
     private void OnEnable()

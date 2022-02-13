@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Throwable : MonoBehaviour
 {
+    public enum THROWABLE
+    {
+        GRENADE,
+        C4,
+        PROXIMITY_MINE,
+        NONE
+    }
+
     [SerializeField] int damage;
 
     [SerializeField] float blastRadius;
