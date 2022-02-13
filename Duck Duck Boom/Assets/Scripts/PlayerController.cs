@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] int HP = 3;
+    [SerializeField] int Armor = 0;
     [SerializeField] float invincabilityTime = 0.5f;
 
     [SerializeField] float speed = 10f;
@@ -42,7 +43,11 @@ public class PlayerController : MonoBehaviour
 
         playerActions.Player_Map.Attack.performed += _ => Attack();
         playerActions.Player_Map.Throw.performed += _ => CheckThrowable();
-        playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
+        //playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
+    }
+
+        void Start() {
+        HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
     }
 
     void Update()
@@ -58,15 +63,17 @@ public class PlayerController : MonoBehaviour
         }
         mouseWorldPos.y = 0;
 
-        int cycleVal = (int)playerActions.Player_Map.CycleWeapon.ReadValue<float>();
+        /*int cycleVal = (int)playerActions.Player_Map.CycleWeapon.ReadValue<float>();
         if (cycleVal != 0)
-            CycleWeapon(cycleVal);
+            CycleWeapon(cycleVal);*/
 
         float velocityZ = Vector3.Dot(movement.normalized, transform.forward);
         float velocityX = Vector3.Dot(movement.normalized, transform.right);
         animator.SetFloat("moveZ", velocityZ);
         animator.SetFloat("moveX", velocityX);
         if (velocityZ == 0 && velocityX == 0) { animator.SetBool("moving", false); } else { animator.SetBool("moving", true); }
+
+        HUDController.Instance.SetCurrAmmo(activeWeapon.ammoRemaining);
     }
 
     void FixedUpdate()
@@ -77,7 +84,7 @@ public class PlayerController : MonoBehaviour
 
     void Attack()
     {
-        activeWeapon.Fire();
+        if (activeWeapon.Fire()) HUDController.Instance.SetCurrAmmo(activeWeapon.ammoRemaining);
         animator.SetTrigger("Fire");
     }
 
@@ -153,10 +160,19 @@ public class PlayerController : MonoBehaviour
         Invoke(nameof(EnablePistol), duration);
     }
 
+    public void HandleArmorPickup()
+    {
+        if (Armor == 0) {
+            Armor = 1;
+            HUDController.Instance.OnPickupArmor();
+        }
+    }
+
     void SetActiveWeapon(int index)
     {
         activeWeapon.gameObject.SetActive(false);
         activeWeapon = weapons[index];
+        HUDController.Instance.SetActiveWeapon(weapons[index], (WeaponPickup.WEAPON) index);
         activeWeapon.gameObject.SetActive(true);
     }
     void EnablePistol()
@@ -164,6 +180,7 @@ public class PlayerController : MonoBehaviour
         allowWeaponPickup = true;
         activeWeapon.gameObject.SetActive(false);
         activeWeapon = weapons[0];
+        HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
         activeWeapon.gameObject.SetActive(true);
     }
 
@@ -173,7 +190,15 @@ public class PlayerController : MonoBehaviour
         if(allowDamage)
         {
             allowDamage = false;
-            HP -= 1;
+            
+            if (Armor > 0) {
+                Armor -= 1;
+                HUDController.Instance.OnDestroyArmor();
+            } else {
+                HP -= 1;
+                HUDController.Instance.SetHealth(HP);
+            }
+                
             Invoke(nameof(EndInvincability), invincabilityTime);
         }
         if (HP <= 0)

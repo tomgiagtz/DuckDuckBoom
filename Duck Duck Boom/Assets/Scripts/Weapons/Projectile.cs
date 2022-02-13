@@ -21,16 +21,12 @@ public class Projectile : MonoBehaviour
     [SerializeField] bool isPlayerTargeting;
 
     Rigidbody rb;
-    string targetTag = "Enemy";
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.velocity = transform.forward * speed;
         if (isTimed)
             Invoke(nameof(Detonate), detTime);
-
-        if(isPlayerTargeting)
-            targetTag = "Player";
     }
 
     private void Detonate()
@@ -42,7 +38,7 @@ public class Projectile : MonoBehaviour
             {
                 col.GetComponent<PlayerController>().TakeDamage();
             }
-            else if(col.tag.Equals("Enemy"))
+            else if(!isPlayerTargeting && col.tag.Equals("Enemy"))
             {
                 col.GetComponent<EnemyController>().TakeDamage();
             }
@@ -57,7 +53,7 @@ public class Projectile : MonoBehaviour
         {
             collision.collider.GetComponent<PlayerController>().TakeDamage();
         }
-        else if (collision.collider.tag.Equals("Enemy"))
+        else if (!isPlayerTargeting && collision.collider.tag.Equals("Enemy"))
         {
             Detonate();
         }
@@ -76,7 +72,7 @@ public class Projectile : MonoBehaviour
             {
                 col.GetComponent<PlayerController>().TakeDamage();
             }
-            else if (col.tag.Equals("Enemy"))
+            else if (!isPlayerTargeting && col.tag.Equals("Enemy"))
             {
                 col.GetComponent<EnemyController>().TakeDamage();
             }

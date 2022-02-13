@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GrenadeLauncher : WeaponBase
 {
-    public override void Fire()
+    public override bool Fire()
     {
         if (!isMagEmpty && isFireReady)
         {
@@ -13,6 +13,8 @@ public class GrenadeLauncher : WeaponBase
 
             Invoke(nameof(FireReset), fireRate);
             ammoRemaining -= 1;
+            return true;
         }
+        return false;
     }
 }

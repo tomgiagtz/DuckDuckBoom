@@ -5,7 +5,7 @@ using UnityEngine;
 public class Rocket : WeaponBase
 {
     [SerializeField] GameObject loadedRocket;
-    public override void Fire()
+    public override bool Fire()
     {
         if (!isMagEmpty && isFireReady)
         {
@@ -14,10 +14,14 @@ public class Rocket : WeaponBase
 
             Invoke(nameof(FireReset), fireRate);
             ammoRemaining -= 1;
+            HUDController.Instance.SetCurrAmmo(ammoRemaining);
 
             loadedRocket.SetActive(false);
             Invoke(nameof(ShowLoadedRocket), fireRate);
+            return true;
         }
+        return false;
+    
     }
 
     void ShowLoadedRocket()

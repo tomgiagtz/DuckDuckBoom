@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Shotgun : WeaponBase
 {
-    public override void Fire()
+    public override bool Fire()
     {
         if (!isMagEmpty && isFireReady)
         {
@@ -15,6 +15,8 @@ public class Shotgun : WeaponBase
 
             Invoke(nameof(FireReset), fireRate);
             ammoRemaining -= 1;
+            return true;
         }
+        return false;
     }
 }
