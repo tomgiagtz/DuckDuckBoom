@@ -46,10 +46,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magazineSize: 4
-  reloadTime: 3
-  fireRate: 0.5
+  reloadTime: 2
+  fireRate: 0.75
   spawnPoint: {fileID: 6813379246336775966}
   projectile: {fileID: 2064093840840170783, guid: c489a85d854059b4b87e374d77103e13, type: 3}
+  ammoRemaining: 0
 --- !u!1 &6813379246336775967
 GameObject:
   m_ObjectHideFlags: 0

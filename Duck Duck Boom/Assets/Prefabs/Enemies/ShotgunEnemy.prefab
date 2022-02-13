@@ -204,9 +204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: aa4718d53fb3a4841afe6ad3ef412320, type: 2}
   state: 0
-  animator: {fileID: 0}
+  animator: {fileID: 7053692703250385374}
   refreshTime: 0.5
   activeWeapon: {fileID: 4719350747117761450}
+  deathEffect: {fileID: 2785720546207922630, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
   groundMask:
     serializedVersion: 2
     m_Bits: 72
@@ -308,6 +309,11 @@ PrefabInstance:
 --- !u!4 &7379562888768131292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7522673076334324151, guid: fc1e13c365b0a0d49ba46324f658e341, type: 3}
+  m_PrefabInstance: {fileID: 1012357838324070763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &7053692703250385374 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8065769031432564917, guid: fc1e13c365b0a0d49ba46324f658e341, type: 3}
   m_PrefabInstance: {fileID: 1012357838324070763}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2302321080759588391

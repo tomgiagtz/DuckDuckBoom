@@ -26,6 +26,9 @@ public class EnemyController : MonoBehaviour{
     [SerializeField]
     WeaponBase activeWeapon;
 
+    [SerializeField]
+    GameObject deathEffect;
+
 
 
 
@@ -33,6 +36,7 @@ public class EnemyController : MonoBehaviour{
         InitAgent();
         homeTarget = transform.position;
         InvokeRepeating("RefreshTarget", 0, refreshTime);
+        activeWeapon.EmptyMagazine();
     }
 
     void InitAgent() {
@@ -118,6 +122,7 @@ public class EnemyController : MonoBehaviour{
 
     public void TakeDamage()
     {
+        Instantiate(deathEffect, transform.position, transform.rotation);
         DropManager.Instance.DropCheck(transform, data.type);
         GameManager.Instance.IncrementEnemiesKilled();
         Destroy(gameObject);

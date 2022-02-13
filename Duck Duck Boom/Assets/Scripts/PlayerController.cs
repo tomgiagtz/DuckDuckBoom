@@ -40,13 +40,14 @@ public class PlayerController : MonoBehaviour
     {
         playerActions = new PlayerActions();
         rigidbody = GetComponent<Rigidbody>();
-
         playerActions.Player_Map.Attack.performed += _ => Attack();
         playerActions.Player_Map.Throw.performed += _ => CheckThrowable();
         //playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
     }
 
-        void Start() {
+    void Start() 
+    {
+        activeWeapon.RefillAmmo();
         HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
     }
 
