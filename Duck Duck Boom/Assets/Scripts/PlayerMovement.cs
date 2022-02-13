@@ -5,10 +5,10 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public GameObject mouseSphere;
+    [SerializeField] float speed = 10f;
 
-    [SerializeField]
-    float speed = 10f;
+    [SerializeField] LayerMask groundMask;
+
     PlayerActions playerActions;
     Rigidbody rigidbody;
     Vector2 movement;
@@ -28,12 +28,11 @@ public class PlayerMovement : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(mousePos);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit))
+        if(Physics.Raycast(ray, out hit, Mathf.Infinity, groundMask))
         {
             mouseWorldPos = hit.point;
         }
-        //mouseWorldPos.y = 0;
-        mouseSphere.transform.position = mouseWorldPos;
+        mouseWorldPos.y = 0;
     }
 
     void FixedUpdate()
