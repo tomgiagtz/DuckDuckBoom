@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
         //playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
     }
 
-    void Start() {
+        void Start() {
         HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
     }
 
@@ -72,6 +72,8 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("moveZ", velocityZ);
         animator.SetFloat("moveX", velocityX);
         if (velocityZ == 0 && velocityX == 0) { animator.SetBool("moving", false); } else { animator.SetBool("moving", true); }
+
+        HUDController.Instance.SetCurrAmmo(activeWeapon.ammoRemaining);
     }
 
     void FixedUpdate()
