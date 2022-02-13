@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
 
         playerActions.Player_Map.Attack.performed += _ => Attack();
         playerActions.Player_Map.Throw.performed += _ => CheckThrowable();
-        playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
+        //playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
     }
 
     void Update()
@@ -59,9 +59,9 @@ public class PlayerController : MonoBehaviour
         }
         mouseWorldPos.y = 0;
 
-        int cycleVal = (int)playerActions.Player_Map.CycleWeapon.ReadValue<float>();
+        /*int cycleVal = (int)playerActions.Player_Map.CycleWeapon.ReadValue<float>();
         if (cycleVal != 0)
-            CycleWeapon(cycleVal);
+            CycleWeapon(cycleVal);*/
 
         float velocityZ = Vector3.Dot(movement.normalized, transform.forward);
         float velocityX = Vector3.Dot(movement.normalized, transform.right);

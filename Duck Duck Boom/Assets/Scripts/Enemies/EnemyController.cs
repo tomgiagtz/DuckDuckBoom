@@ -118,6 +118,7 @@ public class EnemyController : MonoBehaviour{
     public void TakeDamage()
     {
         DropManager.Instance.DropCheck(transform, data.type);
+        GameManager.Instance.IncrementEnemiesKilled();
         Destroy(gameObject);
     }
 
