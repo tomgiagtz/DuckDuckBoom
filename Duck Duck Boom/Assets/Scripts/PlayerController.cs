@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] Throwable.THROWABLE activeThrowable;
     [SerializeField] Throwable[] throwables;
     [SerializeField] Transform throwableSpawn;
+    [SerializeField] Animator animator;
 
     public bool allowWeaponPickup = true;
     bool allowDamage = true;
@@ -61,6 +62,12 @@ public class PlayerController : MonoBehaviour
         int cycleVal = (int)playerActions.Player_Map.CycleWeapon.ReadValue<float>();
         if (cycleVal != 0)
             CycleWeapon(cycleVal);
+
+        float velocityZ = Vector3.Dot(movement.normalized, transform.forward);
+        float velocityX = Vector3.Dot(movement.normalized, transform.right);
+        animator.SetFloat("moveZ", velocityZ);
+        animator.SetFloat("moveX", velocityX);
+        if (velocityZ == 0 && velocityX == 0) { animator.SetBool("moving", false); } else { animator.SetBool("moving", true); }
     }
 
     void FixedUpdate()
@@ -72,6 +79,7 @@ public class PlayerController : MonoBehaviour
     void Attack()
     {
         activeWeapon.Fire();
+        animator.SetTrigger("Fire");
     }
 
     void CheckThrowable()

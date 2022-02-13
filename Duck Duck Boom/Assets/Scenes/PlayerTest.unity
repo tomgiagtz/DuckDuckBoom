@@ -1490,7 +1490,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.8910506, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3013,6 +3013,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd88ebf27b24c284c85d9ddb71274c18, type: 3}
+--- !u!1001 &8521515029254949380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.4640865
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6447358
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.44149303
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861626924214112423, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2785720546207922630, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: m_Name
+      value: p_enemydeath
+      objectReference: {fileID: 0}
+    - target: {fileID: 8722158576352473603, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1747843619}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f36cb389551472047b9ac2e5a0e97a81, type: 3}
 --- !u!1001 &8857093538405004266
 PrefabInstance:
   m_ObjectHideFlags: 0
