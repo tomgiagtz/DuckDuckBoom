@@ -59,6 +59,7 @@ public class EnemyController : MonoBehaviour{
 
     void HandleAttack() {
         activeWeapon.Fire();
+        animator.SetTrigger("Fire");
     }
 
     float currAgroTime;
