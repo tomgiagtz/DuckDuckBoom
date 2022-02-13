@@ -46,6 +46,10 @@ public class PlayerController : MonoBehaviour
         playerActions.Player_Map.CycleThrowable.performed += _ => CycleThrowable();
     }
 
+    void Start() {
+        HUDController.Instance.SetActiveWeapon(weapons[0], WeaponPickup.WEAPON.PISTOL);
+    }
+
     void Update()
     {
         movement = playerActions.Player_Map.Movement.ReadValue<Vector2>();
@@ -78,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     void Attack()
     {
-        activeWeapon.Fire();
+        if (activeWeapon.Fire()) HUDController.Instance.SetCurrAmmo(activeWeapon.ammoRemaining);
         animator.SetTrigger("Fire");
     }
 
@@ -156,8 +160,10 @@ public class PlayerController : MonoBehaviour
 
     public void HandleArmorPickup()
     {
-        if (Armor == 0)
+        if (Armor == 0) {
             Armor = 1;
+            HUDController.Instance.OnPickupArmor();
+        }
     }
 
     void SetActiveWeapon(int index)
@@ -182,10 +188,15 @@ public class PlayerController : MonoBehaviour
         if(allowDamage)
         {
             allowDamage = false;
-            if (Armor > 0)
+            
+            if (Armor > 0) {
                 Armor -= 1;
-            else
+                HUDController.Instance.OnDestroyArmor();
+            } else {
                 HP -= 1;
+                HUDController.Instance.SetHealth(HP);
+            }
+                
             Invoke(nameof(EndInvincability), invincabilityTime);
         }
         if (HP <= 0)

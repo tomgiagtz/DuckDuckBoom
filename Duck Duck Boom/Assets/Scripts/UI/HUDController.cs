@@ -23,28 +23,17 @@ public class HUDController : Singleton<HUDController> {
         UpdateHealthDisplay();
     }
 
-    public void OnTakeDamage() {
-        currHealth--;
-        if (currHealth <= 0) {
-            currHealth = 0;
-            //death logic
-        }
-
-        if(armorGo.activeSelf) {
-            armorGo.SetActive(false);
-        }
-    }
-
-    public void OnHeal() {
-        
-        if (currHealth < maxHealth) {
-            currHealth = maxHealth;
-        }
+    public void SetHealth(int health) {
+        currHealth = health;
+        UpdateHealthDisplay();
     }
 
     public void OnPickupArmor() {
-        currHealth++;
         armorGo.SetActive(true);
+    }
+
+    public void OnDestroyArmor() {
+        armorGo.SetActive(false);
     }
 
     public void UpdateHealthDisplay() {
@@ -64,7 +53,7 @@ public class HUDController : Singleton<HUDController> {
 
     [SerializeField]
     TextMeshProUGUI currAmmoText, maxAmmoText;
-
+    int currAmmo;
 
     void WeaponInit() {
         currWeaponImage.sprite = weaponImages[0];
@@ -73,8 +62,15 @@ public class HUDController : Singleton<HUDController> {
 
     public void SetActiveWeapon(WeaponBase activeWeapon, WeaponPickup.WEAPON _weaponType) {
         this.activeWeapon = activeWeapon;
+        currAmmo = activeWeapon.magazineSize;
+        currAmmoText.SetText(currAmmo.ToString());
         maxAmmoText.SetText(activeWeapon.magazineSize.ToString());
         currWeaponImage.sprite = weaponImages[(int) _weaponType];
+    }
+
+    public void SetCurrAmmo(int _ammo) {
+        currAmmo = _ammo;
+        currAmmoText.SetText(currAmmo.ToString());
     }
 
     public void Start() {

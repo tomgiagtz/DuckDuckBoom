@@ -105,12 +105,12 @@ public class EnemyController : MonoBehaviour{
         RaycastHit hit;
         Debug.DrawRay(transform.position, target.position - transform.position, Color.red, refreshTime);
         if (Physics.Raycast(transform.position,  target.position - transform.position,  out hit, data.agroRange, groundMask)) {
-            Debug.Log("hit terrain");
+            // Debug.Log("hit terrain");
             return false;
             
         } else {
             //Player is in LoS
-            Debug.Log("can see player");
+            // Debug.Log("can see player");
             return true;
         }
     }

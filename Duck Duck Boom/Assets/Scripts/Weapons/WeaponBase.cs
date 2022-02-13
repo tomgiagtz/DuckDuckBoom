@@ -32,7 +32,7 @@ public abstract class WeaponBase : MonoBehaviour
             Reload();
     }
 
-    public abstract void Fire();
+    public abstract bool Fire();
 
     protected void FireReset()
     {
