@@ -2860,7 +2860,7 @@ GameObject:
   - component: {fileID: 1301963607}
   - component: {fileID: 1301963606}
   - component: {fileID: 1301963610}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4168,6 +4168,7 @@ MonoBehaviour:
   initialSpawnCount: 5
   spawnGroupSize: 5
   isEmpty: 0
+  spawnRange: 25
   spawnTime: 5
   spawnRadius: 7.5
   enemyPrefabs:
