@@ -191,6 +191,10 @@ PrefabInstance:
       value: cliff_stepsCornerInner_rock (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -269,6 +273,14 @@ PrefabInstance:
       value: cliff_steps_rock (68)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -333,6 +345,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -413,6 +433,14 @@ PrefabInstance:
       value: cliff_steps_rock (75)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -477,6 +505,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -557,6 +593,14 @@ PrefabInstance:
       value: cliff_steps_rock (72)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -635,6 +679,10 @@ PrefabInstance:
       value: cliff_stepsCornerInner_rock (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -654,7 +702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 107550162}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: NorthWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,6 +788,14 @@ PrefabInstance:
       value: Rocks (5)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -816,6 +872,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -896,6 +960,10 @@ PrefabInstance:
       value: cliff_stepsCornerInner_rock (3)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -974,6 +1042,14 @@ PrefabInstance:
       value: cliff_steps_rock (69)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -993,11 +1069,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 234213864}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SouthWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &234213864
@@ -1032,11 +1108,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 254485386}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WestWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &254485386
@@ -1130,6 +1206,14 @@ PrefabInstance:
       value: cliff_steps_rock (74)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1208,6 +1292,14 @@ PrefabInstance:
       value: cliff_steps_rock (68)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1272,6 +1364,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1340,6 +1440,14 @@ PrefabInstance:
       value: Rocks
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1404,6 +1512,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1484,6 +1600,14 @@ PrefabInstance:
       value: cliff_steps_rock (73)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1548,6 +1672,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1628,6 +1760,14 @@ PrefabInstance:
       value: cliff_steps_rock (67)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1704,6 +1844,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1784,6 +1932,14 @@ PrefabInstance:
       value: cliff_steps_rock (71)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -1860,6 +2016,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -1940,6 +2104,14 @@ PrefabInstance:
       value: cliff_steps_rock (67)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2016,6 +2188,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2096,6 +2276,14 @@ PrefabInstance:
       value: cliff_steps_rock (73)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2172,6 +2360,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2339,6 +2535,14 @@ PrefabInstance:
       value: cliff_steps_rock (68)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2415,6 +2619,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (68)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2495,6 +2707,14 @@ PrefabInstance:
       value: cliff_steps_rock (75)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2514,7 +2734,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 976324290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2610,6 +2830,10 @@ PrefabInstance:
       value: cliff_stepsCornerInner_rock
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7fd0157bb16964954b9f2b6712826172, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -2674,6 +2898,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2752,6 +2984,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -2925,6 +3165,14 @@ PrefabInstance:
       value: cliff_steps_rock (75)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3001,6 +3249,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 411d4efeabcb342f5bd51f371e93dd02, type: 3}
       propertyPath: m_Name
       value: ground_grass
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 411d4efeabcb342f5bd51f371e93dd02, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 411d4efeabcb342f5bd51f371e93dd02, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3081,6 +3333,14 @@ PrefabInstance:
       value: cliff_steps_rock (69)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3103,7 +3363,8 @@ GameObject:
   - component: {fileID: 1301963608}
   - component: {fileID: 1301963607}
   - component: {fileID: 1301963606}
-  m_Layer: 0
+  - component: {fileID: 1301963610}
+  m_Layer: 6
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3181,12 +3442,89 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1301963605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.45, y: 1, z: 20.31}
+  m_LocalPosition: {x: 31.27, y: 1, z: -8.24}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!208 &1301963610
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301963605}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 3.5, y: 0.5, z: 3.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
+--- !u!1001 &1312191642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6742721200630786830, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786867, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
+      propertyPath: m_Name
+      value: ArtilleryEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 426a73d5eb5297b45b2e8a05f6166628, type: 3}
 --- !u!1001 &1334151536
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3243,6 +3581,14 @@ PrefabInstance:
       value: Rocks (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3262,11 +3608,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1412892188}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EastWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &1412892188
@@ -3358,6 +3704,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3508,6 +3862,14 @@ PrefabInstance:
       value: cliff_steps_rock (70)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3584,6 +3946,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (72)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3664,6 +4034,14 @@ PrefabInstance:
       value: cliff_steps_rock (74)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3683,7 +4061,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1589690283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Corners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3776,6 +4154,14 @@ PrefabInstance:
       value: cliff_steps_rock (69)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -3852,6 +4238,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (71)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -3932,6 +4326,14 @@ PrefabInstance:
       value: cliff_steps_rock (71)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4008,6 +4410,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4088,6 +4498,14 @@ PrefabInstance:
       value: cliff_steps_rock (69)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4166,6 +4584,14 @@ PrefabInstance:
       value: cliff_steps_rock (73)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4242,6 +4668,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_Name
       value: cliff_steps_rock (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4461,6 +4895,14 @@ PrefabInstance:
       value: Rocks (10)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4539,6 +4981,14 @@ PrefabInstance:
       value: cliff_steps_rock (70)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4605,6 +5055,14 @@ PrefabInstance:
       value: Rocks (2)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4615,141 +5073,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
   m_PrefabInstance: {fileID: 1877812222}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1909023454
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1909023458}
-  - component: {fileID: 1909023457}
-  - component: {fileID: 1909023456}
-  - component: {fileID: 1909023455}
-  - component: {fileID: 1909023459}
-  - component: {fileID: 1909023460}
-  m_Layer: 0
-  m_Name: Enemy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!136 &1909023455
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909023454}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!23 &1909023456
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909023454}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1909023457
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909023454}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1909023458
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909023454}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 20.74, y: 1, z: -7.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1909023459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909023454}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65705e5f18fd8104692e956fd13fe604, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 8bd815b1c299cfa468fe0f4e55391612, type: 2}
-  state: 0
---- !u!195 &1909023460
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1909023454}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5000001
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 1
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1934771868
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4804,6 +5127,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_Name
       value: Rocks (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5e85c6ef2117647f08b3f4a00406bda4, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -4884,6 +5215,14 @@ PrefabInstance:
       value: cliff_steps_rock (71)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -4903,7 +5242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2127201521}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rocks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5004,6 +5343,14 @@ PrefabInstance:
       value: cliff_steps_rock (70)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -5014,3 +5361,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 03a593367eb23416b8d590d766283ad5, type: 3}
   m_PrefabInstance: {fileID: 2132267419}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6742721201969203693
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6742721200630786830, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 20.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786831, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742721200630786867, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}
+      propertyPath: m_Name
+      value: SgEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ea84fdce3ce56fa4f8395e61843ec783, type: 3}

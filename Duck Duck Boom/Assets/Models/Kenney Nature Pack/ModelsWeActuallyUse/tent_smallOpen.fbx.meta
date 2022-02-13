@@ -1,9 +1,24 @@
 fileFormatVersion: 2
-guid: 80c27f8f281004e3593a0c88eaed8d52
+guid: 315e79109c9fd467f97888448ba85c4a
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colorRed
+    second: {fileID: 2100000, guid: a1972b8c13e2d7f4b81d71b29d199439, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colorRedDark
+    second: {fileID: 2100000, guid: a11822dec1213ea4a9275adada7f262f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood
+    second: {fileID: 2100000, guid: 6d819cd7190b96141a6695ab4511fa73, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -63,7 +78,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
