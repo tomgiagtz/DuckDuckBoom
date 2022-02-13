@@ -3906,7 +3906,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7772021, y: 1}
+    m_SensorSize: {x: 1.7777778, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -4023,7 +4023,7 @@ MonoBehaviour:
   artillaryPickups:
   - {fileID: 3107528621491222506, guid: bd8c23101141c2e4087dbfa6d533998f, type: 3}
   - {fileID: 4388101998189095147, guid: bd88ebf27b24c284c85d9ddb71274c18, type: 3}
-  armorPickup: {fileID: 0}
+  armorPickup: {fileID: 164810235924744413, guid: 1c3e534c58f33a94582c1461beb00714, type: 3}
   activeWeaponDropCount: 0
   activeArmorDropCount: 0
 --- !u!4 &1493884975
