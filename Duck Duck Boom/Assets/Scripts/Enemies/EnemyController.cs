@@ -122,7 +122,11 @@ public class EnemyController : MonoBehaviour{
 
     public void TakeDamage()
     {
-        Instantiate(deathEffect, transform.position, transform.rotation);
+        RaycastHit hit;
+        if(Physics.Raycast(transform.position, Vector3.down, out hit))
+        {
+            Instantiate(deathEffect, hit.point, Quaternion.identity);
+        }
         DropManager.Instance.DropCheck(transform, data.type);
         GameManager.Instance.IncrementEnemiesKilled();
         Destroy(gameObject);
