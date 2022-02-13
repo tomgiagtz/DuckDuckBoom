@@ -18,7 +18,7 @@ public class EnemyController : MonoBehaviour{
     [SerializeField]
     private Transform target;
     private Vector3 homeTarget;
-
+    [SerializeField] Animator animator;
     [SerializeField, Tooltip("Time to wait before refresh")]
     private float refreshTime = 0.5f;
 
