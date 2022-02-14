@@ -2,9 +2,9 @@
 
 Made by:
 
-Note Nuchprayoon
-Tristan Holub
-Tom Giagtzoglou
+- Note Nuchprayoon
+- Tristan Holub
+- Tom Giagtzoglou
 
 We Used Assets from:
 
